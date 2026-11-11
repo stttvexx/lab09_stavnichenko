@@ -1,41 +1,40 @@
+
 <!DOCTYPE html>
 <html lang="uk">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"           content="width=device-width, initial-scale=1.0">
-        <meta name="description"    content="Навчальний сайт про машинне навчання та аналіз даних: історія, основні поняття, застосування, ресурси та інструменти">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Навчальний сайт про машинне навчання та аналіз даних: історія, основні поняття, застосування, ресурси та інструменти">
+    <link rel="canonical" href="https://stttvexx.github.io/lab09_stavnichenko/index.html">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <meta name="author" content="Ставніченко Поліна">
 
-        <link rel="canonical" href="https://stttvexx.github.io/lab09_stavnichenko/index.html">
+    <title>Машинне навчання та аналіз даних</title>
+    <link rel="stylesheet" href="css/style.css">
 
-        <link rel="icon" type="image/png" href="img/favicon.png">
+    <meta property="og:title" content="Машинне навчання та аналіз даних: основи, алгоритми, ресурси">
+    <meta property="og:description" content="Навчальний сайт про машинне навчання та аналіз даних: історія, основні поняття, застосування, ресурси та інструменти для студентів">
+    <meta property="og:image" content="https://stttvexx.github.io/lab09_stavnichenko/img/og-preview.jpg">
+    <meta property="og:url" content="https://stttvexx.github.io/lab09_stavnichenko/index.html">
+    <meta property="og:type" content="website">
 
-        <meta name="author"         content="Ставніченко Поліна">
-
-        <title>Машинне навчання та аналіз даних</title>
-
-        <link rel="stylesheet" href="css/style.css">
-        
-        <meta property="og:title" content="Машинне навчання та аналіз даних: основи, алгоритми, ресурси">
-        <meta property="og:description" content="Навчальний сайт про машинне навчання та аналіз даних: історія, основні поняття, застосування,ресурси та інструменти для студентів">
-        <meta property="og:image" content="https://stttvexx.github.io/lab09_stavnichenko/img/og-preview.jpg">
-        <meta property="og:url" content="https://stttvexx.github.io/lab09_stavnichenko/index.html">
-        <meta property="og:type" content="website">
-
-        <!-- Privacy-friendly analytics by Plausible -->
-        <script async src="https://plausible.io/js/pa-tS37Czor_yyZQHFW6yJKP.js"></script>
-        <script>
+    <!-- Privacy-friendly analytics by Plausible -->
+    <script async src="https://plausible.io/js/pa-tS37Czor_yyZQHFW6yJKP.js"></script>
+    <script>
         window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
         plausible.init()
-        </script>
+    </script>
+</head>
 
-    </head>
+<body id="top">
 
-    <body id="top">
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="site-title">
+                Машинне навчання та аналіз даних
+            </a>
 
-        <header>
-            <a href="index.html" class="site-title">Машинне навчання та аналіз даних</a>
-
-            <nav>
+            <nav aria-label="Основна навігація">
                 <ul class="menu">
                     <li><a href="index.html">Головна</a></li>
                     <li><a href="about.html">Про машинне навчання та аналіз даних</a></li>
@@ -46,45 +45,69 @@
                     <li><a href="application.html">Заявка на участь</a></li>
                 </ul>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <main class="container">
-
-            <div class="stats">
-                <div class="stats__item">3 основні типи машинного навчання</div>
-                <div class="stats__item">5 етапів аналізу даних</div>
-                <div class="stats__item">10 прикладів застосування</div>
-                <div class="stats__item">25 корисних ресурсів</div>
-            </div>
-            
+    <main class="container page-grid">
+        <section class="hero span-12">
             <h1>Машинне навчання та аналіз даних</h1>
 
-            <p> Цей сайт створено як навчальний проєкт із дисципліни <abbr title="Вебтехнології та вебдизайн">Вебтехнології та вебдизайн</abbr>.
-            Останнє оновлення: <time datetime="2026-09-13">13 вересня 2026 року</time></p>
+            <p>Дізнайтеся, як працюють алгоритми машинного
+            навчання, де застосовують аналіз даних та які
+            інструменти використовують для роботи з інформацією.</p>
 
-            <p><strong>Машине навчання</strong> - це галузь штучного інтелекту, яка вивчає алгоритми та моделі, які дозволяють комп'ютерам вчитися з даних без явного програмування.</p>
+            <a href="about.html" class="btn btn--primary">
+                Почати вивчення
+            </a>
+        </section>
 
-            <p> Під час навчання алгоритм аналізує велику кількість даних,
-            знаходить у них закономірності та використовує отримані знання
-            для розв'язання нових задач. Наприклад, моделі машинного навчання
-            можуть розпізнавати зображення, прогнозувати значення та
-            класифікувати інформацію.</p>
+        <!-- 12 колонок: чотири показники по 3 колонки -->
+        <section class="stats span-12" aria-label="Коротко про матеріали сайту">
+            <div class="stats__item">3 основні підходи до машинного навчання</div>
+            <div class="stats__item">5 інструментів для роботи з даними</div>
+            <div class="stats__item">4 ідеї для практичних проєктів</div>
+            <div class="stats__item">6 тематичних ілюстрацій</div>
+        </section>
 
-            <p><strong>Аналіз даних</strong> допомагає отримувати корисну
-            інформацію з великих наборів даних. Для цього використовують
-            статистичні методи, програмування та спеціальні інструменти.
-            Результати аналізу можуть допомогти приймати обґрунтовані рішення.</p>
+        
+        <section class="site-sections span-12">
+            <h2>Що ви знайдете на сайті?</h2>
 
-            <p>Під час роботи з даними важливо враховувати ефективність алгоритмів.
-            Наприклад, алгоритм із складністю <code>O(n)</code> виконує кількість
-            операцій, яка приблизно пропорційна кількості вхідних даних.</p>
+            <div class="card-grid">
 
-            <p>Машинне навчання застосовують у багатьох сферах: для
-            розпізнавання зображень, рекомендацій товарів і фільмів,
-            прогнозування результатів та аналізу великих обсягів інформації.</p>
+                <article class="card">
+                    <h3>Основи машинного навчання</h3>
+                    <p>Історія розвитку, ключові поняття
+                    та сфери застосування машинного навчання.</p>
+                    <a href="about.html">Детальніше →</a>
+                </article>
 
-            <section>
-            <h2>Ключові поняття</h2>
+                <article class="card">
+                    <h3>Ресурси та інструменти</h3>
+                    <p>Корисні матеріали, мови програмування
+                    та інструменти для аналізу даних.</p>
+                    <a href="pages/resources.html">Детальніше →</a>
+                </article>
+
+                <article class="card">
+                    <h3>Порівняння алгоритмів</h3>
+                    <p>Порівняння підходів машинного навчання
+                    та їхніх особливостей.</p>
+                    <a href="comparison.html">Детальніше →</a>
+                </article>
+
+                <article class="card">
+                    <h3>Галерея</h3>
+                    <p>Ілюстрації та наочні приклади,
+                    пов'язані з машинним навчанням.</p>
+                    <a href="gallery.html">Детальніше →</a>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="key-concepts span-12" aria-labelledby="concepts-title">
+            <h2 id="concepts-title">Ключові поняття</h2>
 
             <ul>
                 <li>Штучний інтелект</li>
@@ -92,21 +115,22 @@
                 <li>Аналіз даних</li>
                 <li>Алгоритми та моделі</li>
             </ul>
-            </section>
+        </section>
 
-        </main>
+    </main>
 
-        <footer>
-            <address>
-                Ставніченко Поліна, група ІПЗ-21, 2026 рік. <br>
-                <a href="mailto:lalalala@gmail.com">lalalala@gmail.com</a>
-                <a href="tel:+380000000000">+380000000000</a>
-            </address>
-            <p><a href="privacy.html">Політика конфіденційності</a></p>
-            <p>&copy; 2026 Ставніченко Поліна </p>
-        </footer>
+    <footer>
+        <address>
+            Ставніченко Поліна, група ІПЗ-21, 2026 рік. <br>
+            <a href="mailto:lalalala@gmail.com">lalalala@gmail.com</a>
+            <a href="tel:+380000000000">+380000000000</a>
+        </address>
 
-        <a href="#top" class="back-to-top">↑ Нагору</a>
+        <p><a href="privacy.html">Політика конфіденційності</a></p>
+        <p>&copy; 2026 Ставніченко Поліна</p>
+    </footer>
 
-    </body>
+    <a href="#top" class="back-to-top">↑ Нагору</a>
+
+</body>
 </html>

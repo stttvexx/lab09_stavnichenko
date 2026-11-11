@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport"           content="width=device-width, initial-scale=1.0">
@@ -33,141 +33,158 @@
     <body id="top">
 
         <header>
-            <a href="index.html" class="site-title">Машинне навчання та аналіз даних</a>
+            <div class="header-inner">
+                <a href="index.html" class="site-title">
+                    Машинне навчання та аналіз даних
+                </a>
 
-            <nav>
-                <ul class="menu">
-                    <li><a href="index.html">Головна</a></li>
-                    <li><a href="about.html">Про машинне навчання та аналіз даних</a></li>
-                    <li><a href="pages/resources.html">Ресурси та інструменти</a></li>
-                    <li><a href="comparison.html">Порівняння алгоритмів</a></li>
-                    <li><a href="gallery.html">Галерея</a></li>
-                    <li class="menu__contacts"><a href="contacts.html">Контакти</a></li>
-                    <li><a href="application.html">Заявка на участь</a></li>
-                </ul>
-            </nav>
+                <nav aria-label="Основна навігація">
+                    <ul class="menu">
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="about.html">Про машинне навчання та аналіз даних</a></li>
+                        <li><a href="pages/resources.html">Ресурси та інструменти</a></li>
+                        <li><a href="comparison.html">Порівняння алгоритмів</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li class="menu__contacts"><a href="contacts.html">Контакти</a></li>
+                        <li><a href="application.html">Заявка на участь</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
-        <main class="container">
 
-            <h1>Порівняння алгоритмів машинного навчання та методів аналізу даних</h1>
+        <main class="container page-grid comparison-page">
 
-            <div class="table-wrap">
-            <table>
-                <caption>Порівняння алгоритмів машинного навчання та методів аналізу даних</caption>
-                <thead>
-                    <tr> 
-                        <th scope="col">Алгоритм</th>
-                        <th scope="col">Тип навчання</th>
-                        <th scope="col">Складність</th>
-                        <th scope="col">Стабільність</th>
-                        <th scope="col">Застосування</th>
-                    </tr>
-                </thead>
+            <section class="comparison-intro span-12">
+                <h1>Порівняння алгоритмів машинного навчання та методів аналізу даних</h1>
+            </section>
 
-                <tbody>
-                    <tr>
-                        <th scope="row">Лінійна регресія</th>
-                        <td>З учителем</td>
-                        <td><code>O(n)</code></td>
-                        <td>Висока</td>
-                        <td>Прогнозування числових значень</td>
-                    </tr>
+            <section class="comparison-section span-12">
 
-                    <tr>
-                        <th scope="row">Логістична регресія</th>
-                        <td>З учителем</td>
-                        <td><code>O(n)</code></td>
-                        <td>Висока</td>
-                        <td>Класифікація об'єктів</td>
-                    </tr>
+                <div class="table-wrap">
+                    <table>
+                        <caption>Порівняння алгоритмів машинного навчання та методів аналізу даних</caption>
 
-                    <tr>
-                        <th scope="row">Дерево рішень</th>
-                        <td>З учителем</td>
-                        <td><code>O(n log n)</code></td>
-                        <td>Середня</td>
-                        <td>Класифікація та прогнозування</td>
-                    </tr>
+                        <thead>
+                            <tr>
+                                <th scope="col">Алгоритм</th>
+                                <th scope="col">Тип навчання</th>
+                                <th scope="col">Складність</th>
+                                <th scope="col">Стабільність</th>
+                                <th scope="col">Застосування</th>
+                            </tr>
+                        </thead>
 
-                    <tr>
-                        <th scope="row">Метод k-найближчих сусідів</th>
-                        <td>З учителем</td>
-                        <td><code>O(n)</code></td>
-                        <td>Середня</td>
-                        <td>Класифікація</td>
-                    </tr>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Лінійна регресія</th>
+                                <td>З учителем</td>
+                                <td><code>O(n)</code></td>
+                                <td>Висока</td>
+                                <td>Прогнозування числових значень</td>
+                            </tr>
 
-                    <tr>
-                        <th scope="row">K-means</th>
-                        <td>Без учителя</td>
-                        <td><code>O(nki)</code></td>
-                        <td>Середня</td>
-                        <td>Кластеризація даних</td>
-                    </tr>
-                </tbody>
-            <tfoot>
-                    <tr>
-                    <td colspan="5">Усього розглянуто 5 алгоритмів машинного навчання</td>
-                </tr>
-            </tfoot>
+                            <tr>
+                                <th scope="row">Логістична регресія</th>
+                                <td>З учителем</td>
+                                <td><code>O(n)</code></td>
+                                <td>Висока</td>
+                                <td>Класифікація об'єктів</td>
+                            </tr>
 
-            </table>
-            </div>
-            
-            <h2>Складність алгоритмів машинного навчання</h2>
+                            <tr>
+                                <th scope="row">Дерево рішень</th>
+                                <td>З учителем</td>
+                                <td><code>O(n log n)</code></td>
+                                <td>Середня</td>
+                                <td>Класифікація та прогнозування</td>
+                            </tr>
 
-            <div class="table-wrap">
-            <table>
-                <caption>Порівняння складності алгоритмів машинного навчання</caption>
+                            <tr>
+                                <th scope="row">Метод k-найближчих сусідів</th>
+                                <td>З учителем</td>
+                                <td><code>O(n)</code></td>
+                                <td>Середня</td>
+                                <td>Класифікація</td>
+                            </tr>
 
-                <thead>
-                    <tr>
-                        <th rowspan="2" scope="col">Алгоритм</th>
-                        <th colspan="2" scope="colgroup">Складність</th>
-                    </tr>
+                            <tr>
+                                <th scope="row">K-means</th>
+                                <td>Без учителя</td>
+                                <td><code>O(nki)</code></td>
+                                <td>Середня</td>
+                                <td>Кластеризація даних</td>
+                            </tr>
+                        </tbody>
 
-                    <tr>
-                        <th scope="col">Найкраща</th>
-                        <th scope="col">Найгірша</th>
-                    </tr>
-                </thead>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5">Усього розглянуто 5 алгоритмів машинного навчання</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
 
-                <tbody>
-                    <tr>
-                        <th scope="row">Лінійна регресія</th>
-                        <td><code>O(n)</code></td>
-                        <td><code>O(n³)</code></td>
-                    </tr>
+            </section>
 
-                    <tr>
-                        <th scope="row">Логістична регресія</th>
-                        <td><code>O(n)</code></td>
-                        <td><code>O(n²)</code></td>
-                    </tr>
+            <section class="comparison-section span-12">
 
-                    <tr>
-                        <th scope="row">Дерево рішень</th>
-                        <td><code>O(n log n)</code></td>
-                        <td><code>O(n²)</code></td>
-                    </tr>
+                <h2>Складність алгоритмів машинного навчання</h2>
 
-                    <tr>
-                        <th scope="row">K-найближчих сусідів</th>
-                        <td><code>O(n)</code></td>
-                        <td><code>O(n²)</code></td>
-                    </tr>
+                <div class="table-wrap">
+                    <table>
+                        <caption>Порівняння складності алгоритмів машинного навчання</caption>
 
-                    <tr>
-                        <th scope="row">K-means</th>
-                        <td><code>O(nki)</code></td>
-                        <td><code>O(nki)</code></td>
-                    </tr>
-                </tbody>
-            </table>
-            </div>
+                        <thead>
+                            <tr>
+                                <th rowspan="2" scope="col">Алгоритм</th>
+                                <th colspan="2" scope="colgroup">Складність</th>
+                            </tr>
+
+                            <tr>
+                                <th scope="col">Найкраща</th>
+                                <th scope="col">Найгірша</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <th scope="row">Лінійна регресія</th>
+                                <td><code>O(n)</code></td>
+                                <td><code>O(n³)</code></td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">Логістична регресія</th>
+                                <td><code>O(n)</code></td>
+                                <td><code>O(n²)</code></td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">Дерево рішень</th>
+                                <td><code>O(n log n)</code></td>
+                                <td><code>O(n²)</code></td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">K-найближчих сусідів</th>
+                                <td><code>O(n)</code></td>
+                                <td><code>O(n²)</code></td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">K-means</th>
+                                <td><code>O(nki)</code></td>
+                                <td><code>O(nki)</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
 
         </main>
+
 
         <footer>
             <address>
