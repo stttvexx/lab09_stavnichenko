@@ -1,0 +1,1033 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Довідник дизайн-системи навчального сайту про машинне навчання та аналіз даних: токени, компоненти та шаблони.">
+    <meta name="author" content="Ставніченко Поліна">
+
+    <title>Дизайн-система — Машинне навчання та аналіз даних</title>
+
+    <link rel="canonical" href="https://stttvexx.github.io/lab09_stavnichenko/styleguide.html">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="top">
+
+    <a class="sg-skip" href="#main-content">
+        Перейти до основного вмісту
+    </a>
+
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="site-title">
+                Машинне навчання та аналіз даних
+            </a>
+
+            <nav aria-label="Основна навігація">
+                <ul class="menu">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="about.html">Про машинне навчання та аналіз даних</a></li>
+                    <li><a href="pages/resources.html">Ресурси та інструменти</a></li>
+                    <li><a href="comparison.html">Порівняння алгоритмів</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li class="menu__contacts">
+                        <a href="contacts.html">Контакти</a>
+                    </li>
+                    <li><a href="application.html">Заявка на участь</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="container sg-page">
+
+        <h1>Довідник дизайн-системи</h1>
+
+        <p>
+            Єдине джерело оформлення навчального сайту
+            «Машинне навчання та аналіз даних».
+            На цій сторінці зібрано токени, компоненти
+            та шаблони, які використовуються в проєкті.
+        </p>
+
+        <nav class="sg-nav" aria-label="Розділи довідника">
+            <ul class="menu">
+                <li><a href="#tokens">Токени</a></li>
+                <li><a href="#components">Компоненти</a></li>
+                <li><a href="#templates">Шаблони</a></li>
+            </ul>
+        </nav>
+
+        <!-- ==================================
+             РІВЕНЬ 1. ТОКЕНИ
+             ================================== -->
+
+        <section id="tokens" class="sg-section">
+            <h2>Рівень 1 · Токени</h2>
+
+            <p>
+                Токени — це змінні CSS, які задають
+                єдині кольори, шрифти, відступи,
+                радіуси та тіні для всього сайту.
+            </p>
+
+            <!-- КОЛЬОРИ -->
+
+            <section class="sg-item">
+                <h3>Кольори</h3>
+
+                <div class="sg-colors">
+
+                    <div class="sg-color">
+                        <div class="sg-swatch" style="background: var(--color-primary);"></div>
+                        <strong>Primary</strong>
+                        <code>--color-primary</code>
+                        <span>hsl(214 93% 23%)</span>
+                    </div>
+
+                    <div class="sg-color">
+                        <div class="sg-swatch" style="background: var(--color-primary-light);"></div>
+                        <strong>Primary light</strong>
+                        <code>--color-primary-light</code>
+                        <span>hsl(62 12% 66%)</span>
+                    </div>
+
+                    <div class="sg-color">
+                        <div class="sg-swatch" style="background: var(--color-primary-soft);"></div>
+                        <strong>Primary soft</strong>
+                        <code>--color-primary-soft</code>
+                        <span>hsl(58 29% 76%)</span>
+                    </div>
+
+                    <div class="sg-color">
+                        <div class="sg-swatch" style="background: var(--color-accent);"></div>
+                        <strong>Accent</strong>
+                        <code>--color-accent</code>
+                        <span>hsl(49 68% 68%)</span>
+                    </div>
+
+                    <div class="sg-color">
+                        <div class="sg-swatch" style="background: var(--color-text);"></div>
+                        <strong>Text</strong>
+                        <code>--color-text</code>
+                        <span>hsl(214 93% 23%)</span>
+                    </div>
+
+                    <div class="sg-color">
+                        <div class="sg-swatch" style="background: var(--color-text-muted);"></div>
+                        <strong>Text muted</strong>
+                        <code>--color-text-muted</code>
+                        <span>hsl(213 55% 35%)</span>
+                    </div>
+
+                    <div class="sg-color">
+                        <div class="sg-swatch" style="background: var(--color-surface);"></div>
+                        <strong>Surface</strong>
+                        <code>--color-surface</code>
+                        <span>hsl(0 0% 100%)</span>
+                    </div>
+
+                    <div class="sg-color">
+                        <div class="sg-swatch" style="background: var(--color-border);"></div>
+                        <strong>Border</strong>
+                        <code>--color-border</code>
+                        <span>#e3e7ec</span>
+                    </div>
+
+                    <div class="sg-color">
+                        <div class="sg-swatch" style="background: var(--color-on-dark);"></div>
+                        <strong>On dark</strong>
+                        <code>--color-on-dark</code>
+                        <span>#ffffff</span>
+                    </div>
+
+                    <div class="sg-color">
+                        <div class="sg-swatch" style="background: var(--color-tooltip);"></div>
+                        <strong>Tooltip</strong>
+                        <code>--color-tooltip</code>
+                        <span>#222222</span>
+                    </div>
+
+                    <div class="sg-color">
+                        <div class="sg-swatch" style="background: linear-gradient(var(--color-header-overlay-top), var(--color-header-overlay-bottom));"></div>
+                        <strong>Header overlay</strong>
+                        <code>--color-header-overlay-top</code>
+                        <code>--color-header-overlay-bottom</code>
+                    </div>
+
+                </div>
+
+                <p>
+                    Темно-синій колір використовується
+                    для заголовків, кнопок і навігації.
+                    Світлі кольори застосовуються для фону
+                    блоків, а жовтий — для акцентних елементів.
+                </p>
+            </section>
+
+            <!-- ТИПОГРАФІКА -->
+
+            <section class="sg-item">
+                <h3>Типографічна шкала</h3>
+
+                <p>
+                    Основний шрифт:
+                    <strong>Segoe UI, Roboto, Arial, sans-serif</strong>.
+                    Розміри заголовків адаптивні.
+                </p>
+
+                <div class="sg-type-scale">
+
+                    <div class="sg-type-row">
+                        <code>--font-size-h1</code>
+                        <div class="sg-type-preview" style="font-size: var(--font-size-h1); font-weight: 700;">
+                            Заголовок H1
+                        </div>
+                        <span>32–48px</span>
+                    </div>
+
+                    <div class="sg-type-row">
+                        <code>--font-size-h2</code>
+                        <div class="sg-type-preview" style="font-size: var(--font-size-h2); font-weight: 700;">
+                            Заголовок H2
+                        </div>
+                        <span>24–32px</span>
+                    </div>
+
+                    <div class="sg-type-row">
+                        <code>--font-size-h3</code>
+                        <div class="sg-type-preview" style="font-size: var(--font-size-h3); font-weight: 700;">
+                            Заголовок H3
+                        </div>
+                        <span>19.2–24px</span>
+                    </div>
+
+                    <div class="sg-type-row">
+                        <code>--font-size-site-title</code>
+                        <div class="sg-type-preview" style="font-size: var(--font-size-site-title); font-weight: 700;">
+                            Назва сайту
+                        </div>
+                        <span>20px</span>
+                    </div>
+
+                    <div class="sg-type-row">
+                        <code>--font-size-base</code>
+                        <div class="sg-type-preview" style="font-size: var(--font-size-base);">
+                            Основний текст сайту
+                        </div>
+                        <span>16px</span>
+                    </div>
+
+                    <div class="sg-type-row">
+                        <code>--font-size-small</code>
+                        <div class="sg-type-preview" style="font-size: var(--font-size-small);">
+                            Допоміжний текст
+                        </div>
+                        <span>14.4px</span>
+                    </div>
+
+                    <div class="sg-type-row">
+                        <code>--font-size-caption</code>
+                        <div class="sg-type-preview" style="font-size: var(--font-size-caption);">
+                            Підпис зображення
+                        </div>
+                        <span>13.6px</span>
+                    </div>
+
+                    <div class="sg-type-row">
+                        <code>--font-size-tooltip</code>
+                        <div class="sg-type-preview" style="font-size: var(--font-size-tooltip);">
+                            Текст підказки
+                        </div>
+                        <span>14px</span>
+                    </div>
+
+                    <div class="sg-type-row">
+                        <code>--font-size-label</code>
+                        <div class="sg-type-preview" style="font-size: var(--font-size-label);">
+                            Мітка
+                        </div>
+                        <span>12px</span>
+                    </div>
+
+                </div>
+
+                <p>
+                    Розміри вказано для базового розміру 16px.
+                    Заголовки використовують <code>clamp()</code>,
+                    тому їхній розмір змінюється залежно
+                    від ширини екрана.
+                </p>
+            </section>
+
+            <!-- ВІДСТУПИ -->
+
+            <section class="sg-item">
+                <h3>Шкала відступів</h3>
+
+                <p>
+                    Для розташування елементів використовується
+                    єдина система з шести значень.
+                </p>
+
+                <div class="sg-spacing">
+
+                    <div class="sg-space-row">
+                        <code>--space-1</code>
+                        <span>4px</span>
+                        <div class="sg-space-bar" style="width: var(--space-1);"></div>
+                    </div>
+
+                    <div class="sg-space-row">
+                        <code>--space-2</code>
+                        <span>8px</span>
+                        <div class="sg-space-bar" style="width: var(--space-2);"></div>
+                    </div>
+
+                    <div class="sg-space-row">
+                        <code>--space-3</code>
+                        <span>16px</span>
+                        <div class="sg-space-bar" style="width: var(--space-3);"></div>
+                    </div>
+
+                    <div class="sg-space-row">
+                        <code>--space-4</code>
+                        <span>24px</span>
+                        <div class="sg-space-bar" style="width: var(--space-4);"></div>
+                    </div>
+
+                    <div class="sg-space-row">
+                        <code>--space-5</code>
+                        <span>32px</span>
+                        <div class="sg-space-bar" style="width: var(--space-5);"></div>
+                    </div>
+
+                    <div class="sg-space-row">
+                        <code>--space-6</code>
+                        <span>48px</span>
+                        <div class="sg-space-bar" style="width: var(--space-6);"></div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- РАДІУСИ -->
+
+            <section class="sg-item">
+                <h3>Радіуси заокруглення</h3>
+
+                <div class="sg-radius-grid">
+
+                    <div>
+                        <div class="sg-radius-sample" style="border-radius: var(--radius-xs);"></div>
+                        <code>--radius-xs</code>
+                        <span>4px</span>
+                    </div>
+
+                    <div>
+                        <div class="sg-radius-sample" style="border-radius: var(--radius-sm);"></div>
+                        <code>--radius-sm</code>
+                        <span>6px</span>
+                    </div>
+
+                    <div>
+                        <div class="sg-radius-sample" style="border-radius: var(--radius-md);"></div>
+                        <code>--radius-md</code>
+                        <span>8px</span>
+                    </div>
+
+                    <div>
+                        <div class="sg-radius-sample" style="border-radius: var(--radius-card);"></div>
+                        <code>--radius-card</code>
+                        <span>10px</span>
+                    </div>
+
+                    <div>
+                        <div class="sg-radius-sample" style="border-radius: var(--radius-button);"></div>
+                        <code>--radius-button</code>
+                        <span>18px</span>
+                    </div>
+
+                    <div>
+                        <div class="sg-radius-sample" style="border-radius: var(--radius-pill);"></div>
+                        <code>--radius-pill</code>
+                        <span>20px</span>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ТІНІ -->
+
+            <section class="sg-item">
+                <h3>Тіні</h3>
+
+                <div class="sg-shadow-grid">
+
+                    <div class="sg-shadow-example" style="box-shadow: var(--shadow-card);">
+                        <strong>Звичайна тінь</strong>
+                        <code>--shadow-card</code>
+                    </div>
+
+                    <div class="sg-shadow-example" style="box-shadow: var(--shadow-hover);">
+                        <strong>Тінь при наведенні</strong>
+                        <code>--shadow-hover</code>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="sg-item">
+                <h3>Розміри та рівні накладання</h3>
+
+                <p>
+                    Максимальна ширина контейнера:
+                    <code>--layout-max-width: 1100px</code>.
+                </p>
+
+                <p>
+                    Рівень шапки:
+                    <code>--z-header: 10</code>.
+                </p>
+
+                <p>
+                    Рівень кнопки повернення нагору:
+                    <code>--z-back-to-top: 100</code>.
+                </p>
+            </section>
+
+        </section>
+
+        <!-- ==================================
+             РІВЕНЬ 2. КОМПОНЕНТИ
+             ================================== -->
+
+        <section id="components" class="sg-section">
+            <h2>Рівень 2 · Компоненти</h2>
+
+            <p>
+                Компоненти — це повторно використовувані
+                елементи сайту. Вони мають спільне оформлення,
+                визначене в <code>css/style.css</code>.
+            </p>
+
+            <!-- КНОПКИ -->
+
+            <section class="sg-item">
+                <h3>Кнопка (.btn, .btn--primary)</h3>
+
+                <p>
+                    <strong>Призначення:</strong>
+                    виконання дії або перехід до іншої сторінки.
+                </p>
+
+                <div class="sg-preview sg-buttons">
+                    <a class="btn btn--primary" href="about.html">
+                        Основна
+                    </a>
+
+                    <a class="btn" href="gallery.html">
+                        Звичайна
+                    </a>
+
+                    <button class="btn" type="button" disabled>
+                        Вимкнена
+                    </button>
+                </div>
+
+                <h4>HTML-код</h4>
+
+                <pre class="sg-code"><code>&lt;a class="btn btn--primary" href="about.html"&gt;Основна&lt;/a&gt;
+&lt;a class="btn" href="gallery.html"&gt;Звичайна&lt;/a&gt;
+&lt;button class="btn" type="button" disabled&gt;Вимкнена&lt;/button&gt;</code></pre>
+
+                <p>
+                    <strong>Різновиди й стани:</strong>
+                    основна та звичайна кнопки;
+                    наведення <code>:hover</code>,
+                    фокус <code>:focus-visible</code>,
+                    вимкнений стан <code>disabled</code>.
+                </p>
+
+                <p>
+                    <strong>Доступність:</strong>
+                    посилання використовуються для переходів,
+                    а кнопки — для дій.
+                    Контур фокуса має залишатися видимим.
+                </p>
+
+                <p>
+                    <strong>Коли не застосовувати:</strong>
+                    не використовувати кнопки замість
+                    заголовків, підписів або звичайного тексту.
+                    Для пунктів меню використовуються посилання.
+                </p>
+            </section>
+
+            <!-- КАРТКИ -->
+
+            <section class="sg-item">
+                <h3>Картка (.card, .card.featured)</h3>
+
+                <p>
+                    <strong>Призначення:</strong>
+                    групування тематично пов'язаної інформації.
+                </p>
+
+                <div class="sg-preview">
+
+                    <div class="card-grid">
+
+                        <article class="card">
+                            <h4>Основи машинного навчання</h4>
+
+                            <p>
+                                Історія, основні поняття
+                                та принципи роботи алгоритмів.
+                            </p>
+
+                            <a href="about.html">
+                                Детальніше
+                            </a>
+                        </article>
+
+                        <article class="card">
+                            <span class="badge">Нове</span>
+
+                            <h4>Аналіз даних</h4>
+
+                            <p>
+                                Методи обробки, дослідження
+                                та візуалізації інформації.
+                            </p>
+
+                            <a href="pages/resources.html">
+                                Переглянути ресурси
+                            </a>
+                        </article>
+
+                    </div>
+
+                    <article class="card featured">
+                        <h4>Виділена картка</h4>
+
+                        <p>
+                            Картка з темним фоном для
+                            виділення важливої інформації.
+                        </p>
+                    </article>
+
+                </div>
+
+                <h4>HTML-код</h4>
+
+                <pre class="sg-code"><code>&lt;article class="card"&gt;
+    &lt;h3&gt;Основи машинного навчання&lt;/h3&gt;
+    &lt;p&gt;Опис матеріалу.&lt;/p&gt;
+    &lt;a href="about.html"&gt;Детальніше&lt;/a&gt;
+&lt;/article&gt;
+
+&lt;article class="card"&gt;
+    &lt;span class="badge"&gt;Нове&lt;/span&gt;
+    &lt;h3&gt;Аналіз даних&lt;/h3&gt;
+    &lt;p&gt;Опис матеріалу.&lt;/p&gt;
+&lt;/article&gt;
+
+&lt;article class="card featured"&gt;
+    &lt;h3&gt;Виділена картка&lt;/h3&gt;
+    &lt;p&gt;Важлива інформація.&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+
+                <p>
+                    <strong>Різновиди й стани:</strong>
+                    звичайна картка, картка з міткою
+                    та виділена картка.
+                    При наведенні з'являється додаткова тінь.
+                </p>
+
+                <p>
+                    <strong>Доступність:</strong>
+                    інформація повинна мати логічну структуру,
+                    змістовний заголовок і зрозумілі посилання.
+                </p>
+
+                <p>
+                    <strong>Коли не застосовувати:</strong>
+                    картки не використовуються
+                    для одиночної кнопки або звичайного абзацу,
+                    якому не потрібне окреме групування.
+                </p>
+            </section>
+
+            <!-- ЗНАЧОК -->
+
+            <section class="sg-item">
+                <h3>Значок (.badge)</h3>
+
+                <div class="sg-preview">
+                    <article class="card">
+                        <span class="badge">Нове</span>
+
+                        <h4>Новий матеріал</h4>
+
+                        <p>
+                            Значок розташовується у верхньому
+                            правому куті картки.
+                        </p>
+                    </article>
+                </div>
+
+                <h4>HTML-код</h4>
+
+                <pre class="sg-code"><code>&lt;article class="card"&gt;
+    &lt;span class="badge"&gt;Нове&lt;/span&gt;
+    &lt;h3&gt;Новий матеріал&lt;/h3&gt;
+    &lt;p&gt;Опис матеріалу.&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+
+                <p>
+                    Значок використовує
+                    <code>position: absolute</code>,
+                    а картка — <code>position: relative</code>.
+                </p>
+
+                <p>
+                    <strong>Доступність:</strong>
+                    значення значка передається текстом,
+                    а не лише кольором.
+                </p>
+            </section>
+
+            <!-- ЦИТАТА -->
+
+            <section class="sg-item">
+                <h3>Цитата (blockquote)</h3>
+
+                <div class="sg-preview">
+                    <blockquote>
+                        Якісні дані є важливою основою
+                        ефективного машинного навчання.
+                    </blockquote>
+                </div>
+
+                <h4>HTML-код</h4>
+
+                <pre class="sg-code"><code>&lt;blockquote&gt;
+    Якісні дані є важливою основою
+    ефективного машинного навчання.
+&lt;/blockquote&gt;</code></pre>
+
+                <p>
+                    Для оформлення цитати застосовується
+                    ліва межа та курсивний текст.
+                </p>
+            </section>
+
+            <!-- МЕНЮ -->
+
+            <section class="sg-item">
+                <h3>Навігаційне меню (.menu)</h3>
+
+                <div class="sg-preview">
+                    <nav aria-label="Приклад навігації">
+                        <ul class="menu">
+                            <li><a href="index.html">Головна</a></li>
+                            <li><a href="about.html">Про ML</a></li>
+                            <li><a href="gallery.html">Галерея</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <h4>HTML-код</h4>
+
+                <pre class="sg-code"><code>&lt;nav aria-label="Основна навігація"&gt;
+    &lt;ul class="menu"&gt;
+        &lt;li&gt;&lt;a href="index.html"&gt;Головна&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="about.html"&gt;Про ML&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="gallery.html"&gt;Галерея&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+
+                <p>
+                    Меню створено за допомогою Flexbox.
+                    На вузьких екранах посилання переносяться
+                    завдяки <code>flex-wrap: wrap</code>.
+                </p>
+            </section>
+
+            <!-- ФОРМИ -->
+
+            <section class="sg-item">
+                <h3>Поле форми (input, select, textarea)</h3>
+
+                <p>
+                    <strong>Призначення:</strong>
+                    введення інформації користувачем.
+                </p>
+
+                <div class="sg-preview">
+
+                    <div class="sg-fields">
+
+                        <div class="sg-field">
+                            <label for="sg-name">Ім'я</label>
+                            <input id="sg-name"
+                                   type="text"
+                                   placeholder="Введіть ім'я">
+                        </div>
+
+                        <div class="sg-field">
+                            <label for="sg-email">
+                                Електронна пошта *
+                            </label>
+
+                            <input id="sg-email"
+                                   type="email"
+                                   required
+                                   placeholder="example@gmail.com">
+                        </div>
+
+                        <div class="sg-field">
+                            <label for="sg-subject">Тема звернення</label>
+
+                            <select id="sg-subject">
+                                <option value="">Оберіть тему</option>
+                                <option value="question">Запитання</option>
+                                <option value="suggestion">Пропозиція</option>
+                            </select>
+                        </div>
+
+                        <div class="sg-field">
+                            <label for="sg-message">Повідомлення</label>
+
+                            <textarea id="sg-message"
+                                      rows="4"
+                                      placeholder="Введіть повідомлення"></textarea>
+                        </div>
+
+                        <div class="sg-field">
+                            <label>
+                                <input type="checkbox">
+                                Погоджуюсь з умовами
+                            </label>
+                        </div>
+
+                        <div class="sg-field">
+                            <label for="sg-disabled">Вимкнене поле</label>
+
+                            <input id="sg-disabled"
+                                   type="text"
+                                   value="Недоступне для редагування"
+                                   disabled>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <h4>HTML-код</h4>
+
+                <pre class="sg-code"><code>&lt;label for="email"&gt;Електронна пошта&lt;/label&gt;
+&lt;input type="email" id="email" name="email" required&gt;
+
+&lt;label for="subject"&gt;Тема звернення&lt;/label&gt;
+&lt;select id="subject" name="subject"&gt;
+    &lt;option value="question"&gt;Запитання&lt;/option&gt;
+    &lt;option value="suggestion"&gt;Пропозиція&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;label for="message"&gt;Повідомлення&lt;/label&gt;
+&lt;textarea id="message" name="message"&gt;&lt;/textarea&gt;</code></pre>
+
+                <p>
+                    <strong>Різновиди й стани:</strong>
+                    текстове поле, електронна пошта,
+                    список, текстова область, прапорець.
+                    Стани: звичайний, фокус, помилка,
+                    вимкнений.
+                </p>
+
+                <p>
+                    <strong>Доступність:</strong>
+                    кожне поле має підпис
+                    <code>&lt;label&gt;</code>,
+                    атрибут <code>for</code> якого
+                    відповідає <code>id</code> поля.
+                    Обов'язкові поля мають
+                    атрибут <code>required</code>.
+                </p>
+
+                <p>
+                    <strong>Коли не застосовувати:</strong>
+                    поля форми не використовуються
+                    для відображення статичного тексту.
+                </p>
+            </section>
+
+            <!-- ПІДКАЗКА -->
+
+            <section class="sg-item">
+                <h3>Підказка (.tooltip)</h3>
+
+                <div class="sg-preview">
+
+                    <div class="tooltip-container sg-tooltip">
+                        <button type="button"
+                                class="btn"
+                                aria-describedby="sg-hint">
+                            Наведіть або натисніть Tab
+                        </button>
+
+                        <span id="sg-hint"
+                              class="tooltip"
+                              role="tooltip">
+                            Додаткова інформація про компонент.
+                        </span>
+                    </div>
+
+                </div>
+
+                <h4>HTML-код</h4>
+
+                <pre class="sg-code"><code>&lt;div class="tooltip-container"&gt;
+    &lt;button type="button"
+            class="btn"
+            aria-describedby="hint"&gt;
+        Підказка
+    &lt;/button&gt;
+
+    &lt;span id="hint"
+          class="tooltip"
+          role="tooltip"&gt;
+        Додаткова інформація
+    &lt;/span&gt;
+&lt;/div&gt;</code></pre>
+
+                <p>
+                    Підказка відображається при наведенні
+                    або фокусі всередині контейнера.
+                </p>
+            </section>
+
+        </section>
+
+        <!-- ==================================
+             РІВЕНЬ 3. ШАБЛОНИ
+             ================================== -->
+
+        <section id="templates" class="sg-section">
+            <h2>Рівень 3 · Шаблони сторінок</h2>
+
+            <p>
+                Шаблони поєднують компоненти в готові
+                структури сторінок.
+            </p>
+
+            <!-- ГОЛОВНА -->
+
+            <section class="sg-item">
+                <h3>Головна сторінка</h3>
+
+                <p>
+                    Головна сторінка використовує вступний
+                    блок, кнопки, статистику та сітку карток.
+                </p>
+
+                <div class="sg-preview">
+
+                    <div class="hero">
+                        <h4>Машинне навчання та аналіз даних</h4>
+
+                        <p>
+                            Ознайомтеся з основами машинного
+                            навчання та аналізу даних.
+                        </p>
+
+                        <a class="btn btn--primary" href="about.html">
+                            Почати вивчення
+                        </a>
+                    </div>
+
+                    <div class="card-grid">
+                        <article class="card">
+                            <h4>Основи ML</h4>
+                            <p>Основні поняття та алгоритми.</p>
+                        </article>
+
+                        <article class="card">
+                            <h4>Ресурси</h4>
+                            <p>Інструменти для роботи з даними.</p>
+                        </article>
+                    </div>
+
+                </div>
+
+                <h4>HTML-код</h4>
+
+                <pre class="sg-code"><code>&lt;main class="container page-grid"&gt;
+    &lt;section class="hero span-12"&gt;
+        &lt;h1&gt;Машинне навчання та аналіз даних&lt;/h1&gt;
+        &lt;p&gt;Опис сайту&lt;/p&gt;
+        &lt;a class="btn btn--primary" href="about.html"&gt;
+            Почати вивчення
+        &lt;/a&gt;
+    &lt;/section&gt;
+
+    &lt;section class="site-sections span-12"&gt;
+        &lt;div class="card-grid"&gt;
+            &lt;article class="card"&gt;...&lt;/article&gt;
+            &lt;article class="card"&gt;...&lt;/article&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+&lt;/main&gt;</code></pre>
+            </section>
+
+            <!-- ПЕРЕЛІК -->
+
+            <section class="sg-item">
+                <h3>Перелік матеріалів</h3>
+
+                <p>
+                    Картки розташовуються в адаптивній
+                    сітці CSS Grid.
+                </p>
+
+                <div class="sg-preview">
+
+                    <div class="card-grid">
+
+                        <article class="card">
+                            <h4>Лінійна регресія</h4>
+                            <p>Алгоритм навчання з учителем.</p>
+
+                            <a href="comparison.html" class="btn">
+                                Відкрити
+                            </a>
+                        </article>
+
+                        <article class="card">
+                            <h4>Дерево рішень</h4>
+                            <p>Алгоритм класифікації та прогнозування.</p>
+
+                            <a href="comparison.html" class="btn">
+                                Відкрити
+                            </a>
+                        </article>
+
+                        <article class="card">
+                            <h4>K-means</h4>
+                            <p>Алгоритм кластеризації даних.</p>
+
+                            <a href="comparison.html" class="btn">
+                                Відкрити
+                            </a>
+                        </article>
+
+                    </div>
+
+                </div>
+
+                <h4>HTML-код</h4>
+
+                <pre class="sg-code"><code>&lt;div class="card-grid"&gt;
+    &lt;article class="card"&gt;
+        &lt;h3&gt;Лінійна регресія&lt;/h3&gt;
+        &lt;p&gt;Опис алгоритму&lt;/p&gt;
+        &lt;a class="btn" href="comparison.html"&gt;
+            Відкрити
+        &lt;/a&gt;
+    &lt;/article&gt;
+
+    &lt;article class="card"&gt;...&lt;/article&gt;
+    &lt;article class="card"&gt;...&lt;/article&gt;
+&lt;/div&gt;</code></pre>
+
+                <p>
+                    Використовується
+                    <code>repeat(auto-fit, minmax(...))</code>.
+                    Кількість колонок змінюється
+                    залежно від доступного місця.
+                </p>
+            </section>
+
+            <!-- ФОРМА -->
+
+            <section class="sg-item">
+                <h3>Сторінка з формою</h3>
+
+                <p>
+                    Сторінки зворотного зв'язку та заявки
+                    використовують підписані поля
+                    й групування за допомогою
+                    <code>fieldset</code>.
+                </p>
+
+                <div class="sg-preview">
+
+                    <fieldset>
+                        <legend>Особисті дані</legend>
+
+                        <div class="sg-field">
+                            <label for="sg-template-name">
+                                Ім'я
+                            </label>
+                            <input id="sg-template-name" type="text">
+                        </div>
+
+                        <div class="sg-field">
+                            <label for="sg-template-email">
+                                Електронна пошта
+                            </label>
+                            <input id="sg-template-email" type="email">
+                        </div>
+
+                        <a href="contacts.html" class="btn btn--primary">
+                            Відкрити форму
+                        </a>
+
+                    </fieldset>
+
+                </div>
+
+                <h4>HTML-код</h4>
+
+                <pre class="sg-code"><code>&lt;form action="..." method="post"&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Особисті дані&lt;/legend&gt;
+
+        &lt;label for="name"&gt;Ім'я&lt;/label&gt;
+        &lt;input id="name" name="name" type="text" required&gt;
+
+        &lt;label for="email"&gt;Електронна пошта&lt;/label&gt;
+        &lt;input id="email" name="email" type="email" required&gt;
+
+        &lt;button class="btn btn--primary" type="submit"&gt;
+            Надіслати
+        &lt;/button&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <address>
+            Ставніченко Поліна, група ІПЗ-21, 2026 рік. <br>
+            <a href="mailto:lalalala@gmail.com">lalalala@gmail.com</a>
+            <a href="tel:+380000000000">+380000000000</a>
+        </address>
+
+        <p><a href="privacy.html">Політика конфіденційності</a></p>
+        <p>&copy; 2026 Ставніченко Поліна</p>
+    </footer>
+
+    <a href="#top" class="back-to-top">↑ Нагору</a>
+
+</body>
+</html>

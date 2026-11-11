@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
- 
-Sitemap: https://ваш-нікнейм.github.io/lab01-prizvyshche/sitemap.xml
+
+Sitemap: https://stttvexx.github.io/lab09_stavnichenko/sitemap.xml
